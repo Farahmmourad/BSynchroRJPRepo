@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchro-RJP", "BSynchro-RJP\BSynchro-RJP.csproj", "{653CBB3D-2B25-4836-91ED-6AB2DE6560E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchro-RJP", "BSynchro-RJP\BSynchro-RJP.csproj", "{653CBB3D-2B25-4836-91ED-6AB2DE6560E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchro-RJP-Core", "BSynchro-RJP-Core\BSynchro-RJP-Core.csproj", "{00EBE51E-6CB8-49E1-BEC8-CE4E03CF15E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchro-RJP-Core", "BSynchro-RJP-Core\BSynchro-RJP-Core.csproj", "{00EBE51E-6CB8-49E1-BEC8-CE4E03CF15E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchro-RJP-Data", "BSynchro-RJP-Data\BSynchro-RJP-Data.csproj", "{12780870-085A-416A-B2D3-A8D929672BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchro-RJP-Service", "BSynchro-RJP-Service\BSynchro-RJP-Service.csproj", "{5AF2E015-8324-46AF-88E0-D8CB86F0E3E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{00EBE51E-6CB8-49E1-BEC8-CE4E03CF15E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00EBE51E-6CB8-49E1-BEC8-CE4E03CF15E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00EBE51E-6CB8-49E1-BEC8-CE4E03CF15E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12780870-085A-416A-B2D3-A8D929672BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12780870-085A-416A-B2D3-A8D929672BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12780870-085A-416A-B2D3-A8D929672BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12780870-085A-416A-B2D3-A8D929672BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF2E015-8324-46AF-88E0-D8CB86F0E3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF2E015-8324-46AF-88E0-D8CB86F0E3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF2E015-8324-46AF-88E0-D8CB86F0E3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF2E015-8324-46AF-88E0-D8CB86F0E3E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

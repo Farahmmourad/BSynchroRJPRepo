@@ -1,4 +1,4 @@
-﻿namespace BSynchro_RJP_Core
+﻿namespace BSynchro_RJP_Service
 {
     public class Class1
     {

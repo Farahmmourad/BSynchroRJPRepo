@@ -40,5 +40,6 @@ namespace BSynchro_RJP_Core.Data
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Account> Accounts { get; set; }
     }
 }
