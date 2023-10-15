@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchro-RJP", "BSynchro-RJ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchro-RJP-Core", "BSynchro-RJP-Core\BSynchro-RJP-Core.csproj", "{00EBE51E-6CB8-49E1-BEC8-CE4E03CF15E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchro-RJP-Data", "BSynchro-RJP-Data\BSynchro-RJP-Data.csproj", "{12780870-085A-416A-B2D3-A8D929672BE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchro-RJP-Data", "BSynchro-RJP-Data\BSynchro-RJP-Data.csproj", "{12780870-085A-416A-B2D3-A8D929672BE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSynchro-RJP-Service", "BSynchro-RJP-Service\BSynchro-RJP-Service.csproj", "{5AF2E015-8324-46AF-88E0-D8CB86F0E3E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSynchro-RJP-Service", "BSynchro-RJP-Service\BSynchro-RJP-Service.csproj", "{5AF2E015-8324-46AF-88E0-D8CB86F0E3E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

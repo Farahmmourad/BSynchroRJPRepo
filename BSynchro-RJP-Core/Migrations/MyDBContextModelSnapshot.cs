@@ -42,7 +42,7 @@ namespace BSynchro_RJP_Core.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("Account");
+                    b.ToTable("Accounts");
                 });
 
             modelBuilder.Entity("BSynchro_RJP_Core.Models.Customer", b =>
@@ -88,6 +88,9 @@ namespace BSynchro_RJP_Core.Migrations
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Type")
                         .IsRequired()

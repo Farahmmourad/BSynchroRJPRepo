@@ -25,7 +25,7 @@ namespace BSynchro_RJP_Core.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Account",
+                name: "Accounts",
                 columns: table => new
                 {
                     AccountId = table.Column<int>(type: "int", nullable: false)
@@ -36,9 +36,9 @@ namespace BSynchro_RJP_Core.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Account", x => x.AccountId);
+                    table.PrimaryKey("PK_Accounts", x => x.AccountId);
                     table.ForeignKey(
-                        name: "FK_Account_Customers_CustomerId",
+                        name: "FK_Accounts_Customers_CustomerId",
                         column: x => x.CustomerId,
                         principalTable: "Customers",
                         principalColumn: "CustomerId",
@@ -54,15 +54,16 @@ namespace BSynchro_RJP_Core.Migrations
                     Amount = table.Column<double>(type: "float", nullable: false),
                     CustomerId = table.Column<int>(type: "int", nullable: false),
                     AccountId = table.Column<int>(type: "int", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Status = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Transactions", x => x.TransactionId);
                     table.ForeignKey(
-                        name: "FK_Transactions_Account_AccountId",
+                        name: "FK_Transactions_Accounts_AccountId",
                         column: x => x.AccountId,
-                        principalTable: "Account",
+                        principalTable: "Accounts",
                         principalColumn: "AccountId",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -74,8 +75,8 @@ namespace BSynchro_RJP_Core.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Account_CustomerId",
-                table: "Account",
+                name: "IX_Accounts_CustomerId",
+                table: "Accounts",
                 column: "CustomerId");
 
             migrationBuilder.CreateIndex(
@@ -95,7 +96,7 @@ namespace BSynchro_RJP_Core.Migrations
                 name: "Transactions");
 
             migrationBuilder.DropTable(
-                name: "Account");
+                name: "Accounts");
 
             migrationBuilder.DropTable(
                 name: "Customers");

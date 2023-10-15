@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BSynchro_RJP_Core.Migrations
 {
     [DbContext(typeof(MyDBContext))]
-    [Migration("20231014144332_newmig")]
+    [Migration("20231015120510_newmig")]
     partial class newmig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,7 +44,7 @@ namespace BSynchro_RJP_Core.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("Account");
+                    b.ToTable("Accounts");
                 });
 
             modelBuilder.Entity("BSynchro_RJP_Core.Models.Customer", b =>
@@ -90,6 +90,9 @@ namespace BSynchro_RJP_Core.Migrations
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Type")
                         .IsRequired()

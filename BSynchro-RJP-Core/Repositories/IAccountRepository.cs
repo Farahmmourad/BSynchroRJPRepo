@@ -9,5 +9,6 @@ namespace BSynchro_RJP_Core.Repositories
 {
     public interface IAccountRepository : IRepository<Account>
     {
+        Task<IEnumerable<Account>> GetByCustomerAsync(int customerId);
     }
 }

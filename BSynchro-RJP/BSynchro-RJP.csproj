@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.20">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -17,6 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BSynchro-RJP-Core\BSynchro-RJP-Core.csproj" />
+    <ProjectReference Include="..\BSynchro-RJP-Data\BSynchro-RJP-Data.csproj" />
+    <ProjectReference Include="..\BSynchro-RJP-Service\BSynchro-RJP-Service.csproj" />
   </ItemGroup>
 
 </Project>

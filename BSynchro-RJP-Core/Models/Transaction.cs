@@ -15,5 +15,6 @@ namespace BSynchro_RJP_Core.Models
         public int AccountId { get; set; }
         public virtual Account Account { get; set; }
         public string Type { get; set; }
+        public bool Status { get; set; }
     }
 }

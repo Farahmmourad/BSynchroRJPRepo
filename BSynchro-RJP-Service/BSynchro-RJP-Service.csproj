@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BSynchro-RJP-Core\BSynchro-RJP-Core.csproj" />
+  </ItemGroup>
+
 </Project>
